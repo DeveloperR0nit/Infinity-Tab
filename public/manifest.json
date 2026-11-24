@@ -1,9 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "My Custom New Tab",
+  "name": "InfinityTab - Custom New Tab",
   "version": "1.0",
-  "description": "My personalized new tab page",
-
+  "description": "Transform your Chrome New Tab into a personalized dashboard with unlimited website shortcuts, automatic favicons, and beautiful dynamic wallpapers.",
   "chrome_url_overrides": {
     "newtab": "index.html"
   }
