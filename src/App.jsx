@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import "./App.css";
 import defaultBgImg from "./assets/default-bg-img.jpg";
 import appStoreLogo from "./assets/app-store-logo.png";
 import { Plus, ChevronUp } from "lucide-react";
