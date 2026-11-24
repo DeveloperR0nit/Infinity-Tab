@@ -1,0 +1,266 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+/* Common */
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: white;
+}
+
+.container {
+  width: 100%;
+  margin: auto;
+}
+
+button,
+a {
+  background: transparent;
+  border: none;
+  color: white;
+}
+button {
+  cursor: pointer;
+}
+span {
+  color: white;
+}
+
+/* ============ Main ============= */
+
+/* Background */
+
+.bg-wrapper {
+  position: relative;
+  min-height: 100vh;
+  padding: 40px 15px;
+}
+.bg-wrapper::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: -1;
+}
+.bg-img {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -2;
+}
+
+/* Top */
+
+.time {
+  font-size: 100px;
+  font-weight: 700;
+  text-align: center;
+}
+.date {
+  text-align: center;
+}
+.shortcuts-toggle {
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 30px auto 5px;
+}
+.shortcuts-toggle svg {
+  transition: 0.3s ease;
+}
+.shortcuts-toggle.open svg {
+  transform: rotate(180deg);
+}
+.shortcuts-toggle img {
+  height: 24px;
+  width: 24px;
+}
+.shortcuts-toggle span {
+  margin: 0 2px 0 10px;
+}
+
+/* Links List */
+
+.links-list {
+  display: flex;
+  align-items: start;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-height: 0;
+  opacity: 0;
+  transition:
+    max-height 0.4s ease,
+    opacity 0.3s ease;
+  justify-content: center;
+}
+.links-list.open {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-height: fit-content;
+  opacity: 1;
+}
+.links {
+  border: none;
+  cursor: pointer;
+  border-radius: 15px;
+  transition: 0.3s ease;
+  text-decoration: none;
+  max-width: 90px;
+  flex-shrink: 0;
+  padding: 10px;
+}
+.links:hover {
+  background: rgba(0, 0, 0, 0.4);
+}
+.links img {
+  height: 24px;
+  display: block;
+  margin: auto;
+  margin-bottom: 5px;
+}
+.links span {
+  display: block;
+  font-weight: 500;
+  text-align: center;
+  overflow-wrap: anywhere;
+}
+
+/* Lists Modal */
+
+.modal-bg {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease;
+  visibility: visible;
+  opacity: 1;
+}
+.modal-bg.closed {
+  opacity: 0;
+  visibility: hidden;
+}
+.modal-wrapper {
+  width: 560px;
+  background: rgb(28 28 28);
+  border-radius: 24px;
+  border: 2px solid #4c4c4c;
+  padding: 24px;
+  position: relative;
+}
+.modal-bg .heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.modal-wrapper h2 {
+  font-size: 20px;
+}
+.modal-wrapper .close-btn {
+  font-size: 20px;
+  font-weight: 700;
+  transition: 0.3s ease;
+}
+.modal-wrapper .close-btn:hover {
+  transform: scale(1.3);
+}
+.modal-wrapper label,
+.modal-wrapper input {
+  display: block;
+  width: 100%;
+}
+.modal-wrapper label {
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+.modal-wrapper input {
+  margin-bottom: 16px;
+  font-size: 14px;
+  padding: 10px 14px;
+  transition: 0.3s;
+  background: transparent;
+  border: 1px solid #4c4c4c;
+  border-radius: 12px;
+  color: white;
+  transition: 0.3s ease;
+}
+.modal-wrapper input:focus {
+  border: 1px solid white;
+  outline: none;
+}
+.modal-wrapper .buttons-row {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 10px;
+  padding-top: 10px;
+}
+.modal-wrapper .buttons-row button {
+  border-radius: 12px;
+  padding: 10px 14px;
+  border: 1px solid #4c4c4c;
+  font-size: 14px;
+  transition: 0.3s ease;
+}
+.modal-wrapper .save-btn {
+  background-color: rgb(79, 70, 229);
+  border: 1px solid rgb(79, 70, 229) !important;
+  font-weight: 500;
+}
+.modal-wrapper .save-btn:hover {
+  color: rgb(79, 70, 229);
+  background-color: white;
+  transform: scale(1.1);
+}
+.modal-wrapper .cancel-btn:hover {
+  border: 1px solid white;
+}
+
+/* Dropdown */
+
+.dropdown {
+  position: absolute;
+  background: black;
+  list-style: none;
+  border-radius: 12px;
+  padding: 5px;
+}
+.dropdown.closed {
+  opacity: 0;
+  z-index: -2;
+}
+.dropdown .dropdown-item button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px;
+  margin-bottom: 2px;
+  border-radius: 12px;
+  transition: 0.3s ease;
+}
+.dropdown .dropdown-item .remove {
+  margin-bottom: 0;
+}
+.dropdown .dropdown-item button:hover {
+  background-color: #343434;
+}
+.dropdown .dropdown-item span {
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+}
