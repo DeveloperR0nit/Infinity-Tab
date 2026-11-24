@@ -1,7 +1,7 @@
 # ♾️ InfinityTab
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=3000&pause=1000&color=8B5CF6&center=true&vCenter=true&width=600&lines=InfinityTab;Unlimited+Shortcuts.+One+Tab.;Your+Browser%2C+Your+Space." alt="InfinityTab animated heading" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=30&duration=3000&pause=1000&color=8B5CF6&center=true&vCenter=true&width=650&lines=Welcome+to+InfinityTab;Unlimited+Shortcuts.+One+Tab.;Your+Browser%2C+Your+Space." alt="InfinityTab animated heading" />
 </p>
 
 <p align="center">
@@ -13,97 +13,113 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Platform-Google%20Chrome-blue?logo=googlechrome&logoColor=white" />
-  <img src="https://img.shields.io/badge/React-JavaScript-61DAFB?logo=react&logoColor=black" />
-  <img src="https://img.shields.io/badge/Vite-Build%20Tool-646CFF?logo=vite&logoColor=white" />
-  <img src="https://img.shields.io/badge/Status-In%20Development-orange" />
+  <img src="https://img.shields.io/badge/Platform-Chrome-blue?logo=googlechrome&logoColor=white" alt="Chrome" />
+  <img src="https://img.shields.io/badge/React-JavaScript-61DAFB?logo=react&logoColor=black" alt="React" />
+  <img src="https://img.shields.io/badge/Build-Vite-646CFF?logo=vite&logoColor=white" alt="Vite" />
+  <img src="https://img.shields.io/badge/License-To%20Be%20Added-lightgrey" alt="License" />
 </p>
 
 ---
 
-## ✨ Overview
+## 🌟 Overview
 
-**InfinityTab** is a custom Chrome New Tab extension designed to make your browsing experience more organized and personalized.
+**InfinityTab** is a customizable Chrome New Tab extension designed to make browsing more convenient, organized, and personalized.
 
-Instead of being limited to a handful of bookmarks, InfinityTab allows you to add and manage unlimited website shortcuts, all accessible from a single homepage.
+Instead of being restricted to a limited number of bookmarks or frequently visited websites, InfinityTab lets you add and manage unlimited website shortcuts, all accessible from a single homepage.
 
-With a clean interface and dynamic backgrounds, it transforms your ordinary new tab into your own personalized browsing dashboard.
+With dynamic backgrounds, automatic website favicons, and a clean interface, InfinityTab transforms your ordinary new tab into a personalized browsing dashboard.
 
-## 🚀 Features
+## ✨ Features
 
-- ♾️ **Unlimited Shortcuts:** Add and manage as many website shortcuts as you want in one place.
-- 🌐 **Automatic Website Icons:** Automatically fetch website favicons using their URLs.
-- 🖼️ **Dynamic Backgrounds:** Enjoy random background images fetched through the Unsplash API.
-- 🎨 **Multiple Background Categories:** Choose from different image categories.
-- 💾 **Persistent Data:** Keep your shortcuts saved between browser sessions.
-- ⚡ **Custom New Tab:** Replace Chrome's default new tab page with InfinityTab.
-- 🧭 **Clean Interface:** Enjoy a simple and organized homepage for quick navigation.
+- ♾️ **Unlimited Website Shortcuts** – Add and manage as many website shortcuts as you want in one place.
+- 🌐 **Automatic Website Favicons** – Fetch website icons automatically using their URLs.
+- 🖼️ **Dynamic Background Images** – Display random background images using the Unsplash API.
+- 🎨 **Multiple Background Categories** – Choose from different categories to personalize your homepage.
+- 💾 **Persistent Shortcut Storage** – Keep your shortcuts saved between browser sessions.
+- ⚡ **Custom New Tab Page** – Replace Chrome's default New Tab page with InfinityTab.
+- 🧭 **Clean Interface** – Access your favorite websites through a simple and organized dashboard.
 
-## 🖼️ Background Images
+<!-- ## 🖼️ Preview -->
 
-InfinityTab currently supports the following random background categories through the **Unsplash API**:
+<!-- Replace this with your actual project screenshots -->
 
-| Category | Description                      |
-| -------- | -------------------------------- |
-| `messi`  | Lionel Messi-themed images       |
+<!-- <p align="center">
+  <img src="assets/preview.png" alt="InfinityTab homepage preview" width="850" />
+</p> -->
+
+<!-- ### 🎬 Animated Demo -->
+
+<!-- Add your actual screen recording or GIF here -->
+
+<!-- <p align="center">
+  <img src="assets/demo.gif" alt="InfinityTab animated demonstration" width="850" />
+</p> -->
+
+<!-- > You can replace these placeholders with screenshots and a GIF demonstrating your actual application. -->
+
+## 🌄 Background Images
+
+InfinityTab currently supports four random background image categories through the **Unsplash API**.
+
+| Category | Description |
+|---|---|
+| `messi` | Lionel Messi-themed images |
 | `nature` | Nature and landscape photography |
-| `memes`  | Funny and entertaining images    |
-| `gaming` | Gaming-related backgrounds       |
+| `memes` | Funny and entertaining images |
+| `gaming` | Gaming-related images |
 
-**Default Background & Fallback**
+### Default Background & Fallback
 
 The default background image is of **Lionel Messi**.
 
-If the Unsplash API request fails or an image cannot be fetched, InfinityTab automatically uses the default Messi image as a fallback.
+If the Unsplash API request fails or an image cannot be fetched, InfinityTab automatically displays the default Messi image as a fallback.
 
-## 🎬 Preview
-
-<!-- Add your animated project demo here -->
-<p align="center">
-  <img src="assets/demo.gif" alt="InfinityTab animated demonstration" width="850" />
-</p>
-
-> Replace `assets/demo.gif` with your actual screen recording or GIF of the extension.
+This ensures that the homepage still has a background even when the API is unavailable.
 
 ## 🛠️ Technologies Used
 
-- **React.js** – Building the user interface.
-- **JavaScript** – Application functionality and interactions.
-- **CSS3** – Styling and animations.
-- **Vite** – Development and production build.
-- **Chrome Extension API** – Replacing Chrome's default New Tab page.
-- **Unsplash API** – Fetching random background images.
+| Technology | Purpose |
+|---|---|
+| React.js | Building the user interface |
+| JavaScript | Application functionality |
+| CSS3 | Styling and animations |
+| Vite | Development and production build |
+| Chrome Extension API | Replacing Chrome's default New Tab page |
+| Unsplash API | Fetching random background images |
 
 ## 📥 Installation Guide
 
-Want to use InfinityTab? Follow these steps to install it in your Chrome browser.
+There are two ways to install InfinityTab.
 
-### Step 1: Download the repository
+### Method 1: Install from the Source Code
 
-1. Open this GitHub repository.
-2. Click the green **Code** button.
-3. Select **Download ZIP**.
-4. Extract the downloaded ZIP file to your computer.
+This method is suitable for developers and users comfortable with running basic terminal commands.
 
-Alternatively, clone the repository using Git:
+**Step 1: Clone the repository**
+
+Open your terminal and run:
 
 ```bash
-git clone YOUR_REPOSITORY_URL
+git clone https://github.com/DeveloperR0nit/Infinity-Tab.git
 ```
 
-### Step 2: Install dependencies
+Alternatively, download the repository as a ZIP file using GitHub's **Code → Download ZIP** option and extract it.
 
-Open the extracted project folder in VS Code or your preferred terminal.
+**Step 2: Open the project folder**
 
-Run:
+```bash
+cd Infinity-Tab
+```
+
+**Step 3: Install dependencies**
+
+Make sure Node.js and npm are installed, then execute:
 
 ```bash
 npm install
 ```
 
-### Step 3: Build the project
-
-Generate the production build:
+**Step 4: Generate the production build**
 
 ```bash
 npm run build
@@ -111,51 +127,89 @@ npm run build
 
 This will generate a `dist` folder containing the production-ready extension files.
 
-### Step 4: Load the extension in Chrome
+**Step 5: Load InfinityTab into Chrome**
 
 1. Open Google Chrome.
-2. Navigate to:
-
-   ```text
-   chrome://extensions/
-   ```
-
+2. Navigate to `chrome://extensions/`.
 3. Enable **Developer mode** using the toggle in the top-right corner.
 4. Click **Load unpacked**.
-5. Select the `dist` folder generated in Step 3.
-6. Your InfinityTab extension is now installed!
+5. Select the generated `dist` folder.
+6. InfinityTab should now appear in your installed extensions.
 
-### Step 5: Enjoy your new homepage!
+**Step 6: Enjoy your new homepage!**
 
 Open a new tab and experience your personalized InfinityTab dashboard.
 
-**Note:** If you have already downloaded a pre-built version containing the manifest and production files, you can load its extension folder directly without running the build commands.
+### Method 2: Install Using a Pre-built Extension
+
+If a production-ready build is provided in the repository's Releases section:
+
+1. Download the latest extension build.
+2. Extract the downloaded ZIP file.
+3. Open `chrome://extensions/` in Chrome.
+4. Enable Developer mode.
+5. Click **Load unpacked**.
+6. Select the extracted extension folder containing `manifest.json`.
+
+That's it! InfinityTab is ready to use.
+
+> **Note:** The pre-built installation method requires a published production build. If no release is available yet, use Method 1.
 
 ## 🔮 Future Improvements
 
 InfinityTab is continuously evolving. Here are some features planned for future updates:
 
-- [ ] 🔍 **Search Functionality:** Add an integrated search bar and search button for quicker browsing.
-- [ ] ↔️ **Shortcut Position Customization:** Allow users to rearrange and change the positions of their website shortcuts.
-- [ ] ⚙️ **Settings Panel:** Introduce a dedicated settings button for managing homepage preferences.
-- [ ] 🖼️ **Custom Wallpapers:** Allow users to upload and set their own wallpapers instead of relying only on random backgrounds.
+- [ ] 🔍 **Search Functionality** – Introduce an integrated search bar and search button for quicker browsing.
+- [ ] ↔️ **Shortcut Position Customization** – Allow users to rearrange and customize the positions of their website shortcuts.
+- [ ] ⚙️ **Settings Panel** – Add a dedicated settings button to manage homepage preferences.
+- [ ] 🖼️ **Custom Wallpapers** – Allow users to upload and set their own wallpapers instead of relying only on random backgrounds.
 
 ## 🤝 Contributing
 
 Contributions, suggestions, and feature requests are always welcome!
 
-If you have ideas to improve InfinityTab:
+If you'd like to contribute:
 
 1. Fork this repository.
-2. Create a new branch.
+2. Create a new branch:
+
+   ```bash
+   git checkout -b feature/your-feature-name
+   ```
+
 3. Make your changes.
-4. Submit a Pull Request.
+4. Commit your changes:
+
+   ```bash
+   git commit -m "Add: your feature description"
+   ```
+
+5. Push your branch:
+
+   ```bash
+   git push origin feature/your-feature-name
+   ```
+
+6. Open a Pull Request.
+
+## 🐛 Bug Reports & Feature Requests
+
+Found a bug or have an idea for a new feature?
+
+Feel free to open an [Issue](https://github.com/DeveloperR0nit/Infinity-Tab/issues) on GitHub.
 
 ## 👨‍💻 Developer
 
-Developed with ❤️ by **Ronit Saha**.
+**Ronit Saha**
+
+- GitHub: [@DeveloperR0nit](https://github.com/DeveloperR0nit)
+- Project: [InfinityTab](https://github.com/DeveloperR0nit/Infinity-Tab)
 
 ---
+
+<p align="center">
+  Made with ❤️ by Ronit Saha
+</p>
 
 <p align="center">
   **InfinityTab — Your shortcuts, without limits. ♾️**
